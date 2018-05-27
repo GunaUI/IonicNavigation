@@ -15,7 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SecondPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private navCtrl: NavController, private navParams: NavParams) {
+  }
+  setRootPageToHome() : void{
+    alert('hey came');
+    this.navCtrl.setRoot('HomePage');
   }
 
   ionViewDidLoad() {
